@@ -80,6 +80,8 @@ header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:col
 .price{font-family:var(--f-display);font-size:1.5rem;font-weight:400;font-variant-numeric:tabular-nums}
 .price small{font-family:var(--f-body);font-size:.92rem;color:var(--muted)}
 .svc > p{color:var(--muted)}
+.svc > .price-note{margin-top:-10px;font-size:.9rem}
+.svc > .extras{font-size:.86rem;padding:10px 14px;border-radius:12px;background:var(--soft)}
 .steps{list-style:none;margin:0;padding:0;display:grid;gap:10px;counter-reset:s}
 .steps li{display:grid;grid-template-columns:22px 1fr;gap:10px;counter-increment:s}
 .steps li::before{content:counter(s);color:var(--accent);font-weight:600;font-variant-numeric:tabular-nums}
@@ -107,7 +109,7 @@ textarea{min-height:110px;resize:vertical}
 .ph small{position:absolute;left:12px;top:10px;color:var(--muted);font-size:.75rem}
 .prod-row{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
 .prod-row strong{font-weight:500}
-.prod-price{white-space:nowrap;font-variant-numeric:tabular-nums;color:var(--accent);font-weight:500}
+.prod-price{white-space:nowrap;font-variant-numeric:tabular-nums;color:var(--muted);font-size:.85rem}
 .prod p{color:var(--muted);font-size:.9rem}
 @media (max-width:900px){.shop{grid-template-columns:repeat(2,1fr);gap:20px}}
 
