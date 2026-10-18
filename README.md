@@ -11,7 +11,7 @@ It's a plain static site with no build step:
 
 ## Before launch
 
-1. Open `assets/main.js` and fill in `CONTACTS` at the top. `whatsapp` is digits only with the country code, for example `77011234567`. Until it's set, the order form tells customers to write on Telegram.
+1. Open `assets/main.js` and fill in `CONTACTS` at the top. `whatsapp` is digits only with the country code, for example `77011234567`. Leave `telegram` or `instagram` empty to hide that line from the contacts.
 2. Replace the example prices in `index.html` and `assets/main.js` (search for `₸`).
 3. Add real product photos.
 
