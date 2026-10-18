@@ -129,13 +129,15 @@
       <div class="services">
         <article class="svc">
           <div class="svc-top"><h3 data-i18n="p-title">Печать вашей модели</h3><span class="pill" data-i18n="p-pill">есть файл</span></div>
-          <div class="price"><span data-i18n="p-price">от 150 ₸</span> <small data-i18n="p-unit">за грамм</small></div>
+          <div class="price"><span data-i18n="p-price">от 70 ₸</span> <small data-i18n="p-unit">за грамм</small></div>
+          <p class="price-note" data-i18n="p-note">Точную цену назовём после проверки файла. Минимальный заказ 2 000 ₸.</p>
           <p data-i18n="p-text">Вы присылаете STL, 3MF или OBJ. Мы проверяем модель, подбираем настройки и печатаем.</p>
           <ol class="steps">
             <li data-i18n="p-s1">Отправляете файл и пожелания по цвету</li>
             <li data-i18n="p-s2">Называем точную цену и срок</li>
             <li data-i18n="p-s3">Печатаем, присылаем фото, доставляем</li>
           </ol>
+          <p class="extras" data-i18n="p-extra">Удаление поддержек входит в цену · Срочно, на следующий день: +30%</p>
           <a class="btn btn-primary" href="#order" data-svc="print" data-i18n="p-btn">Заказать печать</a>
         </article>
         <article class="svc">
@@ -147,6 +149,7 @@
             <li data-i18n="d-s2">Показываем 3D-модель и согласовываем правки</li>
             <li data-i18n="d-s3">Печатаем и передаём готовое изделие</li>
           </ol>
+          <p class="extras" data-i18n="d-terms">Предоплата 50%, две правки входят в цену. Сложные проекты считаем отдельно.</p>
           <a class="btn btn-line" href="#order" data-svc="design" data-i18n="d-btn">Обсудить идею</a>
         </article>
       </div>
@@ -157,12 +160,13 @@
         <div class="field"><label for="c-qty" data-i18n="c-qty">Количество, шт</label><input id="c-qty" type="number" min="1" value="2" inputmode="numeric"></div>
         <div class="field"><label for="c-mat" data-i18n="c-mat">Материал</label>
           <select id="c-mat">
-            <option value="150" data-i18n="c-o1">PLA, один цвет</option>
-            <option value="200" data-i18n="c-o2">PLA, несколько цветов</option>
+            <option value="70" data-i18n="c-o1">PLA</option>
+            <option value="80" data-i18n="c-o2">PETG, прочнее</option>
+            <option value="90" data-i18n="c-o3">PLA, несколько цветов</option>
           </select>
         </div>
-        <div class="calc-out"><label data-i18n="c-total">Итого примерно</label><div class="price" id="c-total">18 000 ₸</div></div>
-        <p class="calc-note" data-i18n="c-note">Вес модели показывает слайсер. Не знаете вес? Пришлите файл, мы посчитаем сами. Минимальный заказ 3 000 ₸.</p>
+        <div class="calc-out"><label data-i18n="c-total">Итого примерно</label><div class="price" id="c-total">8 400 ₸</div></div>
+        <p class="calc-note" data-i18n="c-note">Вес модели показывает слайсер. Не знаете вес? Пришлите файл, мы посчитаем сами. Минимальный заказ 2 000 ₸.</p>
       </div>
     </div>
   </section>
@@ -170,37 +174,37 @@
   <section id="shop">
     <div class="wrap">
       <div class="sec-head">
-        <span class="label" data-i18n="sh-eyebrow">Магазин</span>
+        <span class="label" data-i18n="sh-eyebrow">Магазин · скоро</span>
         <h2 data-i18n="sh-h2">Готовые изделия</h2>
-        <p data-i18n="sh-p">Печатаем под заказ за 1–2 дня. Цвет выбираете при оформлении.</p>
+        <p data-i18n="sh-p">Скоро здесь появятся наши изделия. Сейчас мы печатаем и фотографируем первые модели.</p>
       </div>
       <div class="shop">
         <article class="prod">
           <div class="ph"><small data-i18n="soon">фото скоро</small>
             <svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="38" fill="none" stroke="var(--accent)" stroke-width="5"/><circle cx="50" cy="50" r="14" fill="var(--accent)"/><path d="M14 50h72" stroke="var(--accent)" stroke-width="3"/></svg>
           </div>
-          <div class="prod-row"><strong data-i18n="pr1">Антистресс «Звезда смерти»</strong><span class="prod-price">2 500 ₸</span></div>
+          <div class="prod-row"><strong data-i18n="pr1">Антистресс «Звезда смерти»</strong><span class="prod-price" data-i18n="soon2">скоро</span></div>
           <p data-i18n="pr1d">Крутящийся шар-антистресс, печатается целиком.</p>
         </article>
         <article class="prod">
           <div class="ph"><small data-i18n="soon">фото скоро</small>
             <svg viewBox="0 0 100 100" aria-hidden="true"><ellipse cx="50" cy="58" rx="30" ry="24" fill="var(--accent)"/><circle cx="34" cy="32" r="10" fill="var(--accent)"/><circle cx="66" cy="32" r="10" fill="var(--accent)"/><circle cx="41" cy="55" r="3.5" fill="var(--soft)"/><circle cx="59" cy="55" r="3.5" fill="var(--soft)"/></svg>
           </div>
-          <div class="prod-row"><strong data-i18n="pr2">Флекси красная панда</strong><span class="prod-price">3 500 ₸</span></div>
+          <div class="prod-row"><strong data-i18n="pr2">Флекси красная панда</strong><span class="prod-price" data-i18n="soon2">скоро</span></div>
           <p data-i18n="pr2d">Гибкая игрушка с подвижными суставами, 12 см.</p>
         </article>
         <article class="prod">
           <div class="ph"><small data-i18n="soon">фото скоро</small>
             <svg viewBox="0 0 100 100" aria-hidden="true"><path d="M20 70 Q50 12 80 70 Z" fill="var(--accent)"/><path d="M30 70h40v7H30z" fill="var(--accent)"/><circle cx="44" cy="52" r="3.5" fill="var(--soft)"/><circle cx="56" cy="52" r="3.5" fill="var(--soft)"/></svg>
           </div>
-          <div class="prod-row"><strong data-i18n="pr3">Флекси дракончик</strong><span class="prod-price">3 500 ₸</span></div>
+          <div class="prod-row"><strong data-i18n="pr3">Флекси дракончик</strong><span class="prod-price" data-i18n="soon2">скоро</span></div>
           <p data-i18n="pr3d">Игрушка или брелок, без клея и сборки.</p>
         </article>
         <article class="prod">
           <div class="ph"><small data-i18n="soon">фото скоро</small>
             <svg viewBox="0 0 100 100" aria-hidden="true"><path d="M22 80h56v5H22z" fill="var(--accent)"/><path d="M36 80 L44 22 h9 L48 80z" fill="var(--accent)"/><rect x="50" y="18" width="22" height="40" rx="4" fill="none" stroke="var(--accent)" stroke-width="4"/></svg>
           </div>
-          <div class="prod-row"><strong data-i18n="pr4">Подставка для телефона</strong><span class="prod-price">4 500 ₸</span></div>
+          <div class="prod-row"><strong data-i18n="pr4">Подставка для телефона</strong><span class="prod-price" data-i18n="soon2">скоро</span></div>
           <p data-i18n="pr4d">С прорезью для кабеля зарядки, фактура камня.</p>
         </article>
       </div>
