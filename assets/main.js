@@ -1,7 +1,7 @@
 (function(){
   // Контакты бизнеса. Замените на настоящие перед запуском.
   // WHATSAPP: только цифры, с кодом страны, например 77011234567.
-  var CONTACTS={whatsapp:"",whatsappLabel:"+7 7XX XXX XX XX",telegram:"@obsidiumlab",instagram:"@obsidiumlab.kz"};
+  var CONTACTS={whatsapp:"77475891209",whatsappLabel:"+7 747 589 12 09",telegram:"@obsidiumlab",instagram:"@obsidiumlab.kz"};
 
   var KK={
     "draft":"Сайттың жобасы: бағалар, фотолар мен байланыстар әзірге шамамен.",
