@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Obsidium Lab · 3D-печать в Астане</title>
+<meta name="description" content="3D-печать в Астане: напечатаем вашу модель или создадим её с нуля по вашей идее. Оплата Kaspi, доставка по городу.">
+<meta property="og:title" content="Obsidium Lab · 3D-печать в Астане">
+<meta property="og:description" content="Напечатаем вашу модель или создадим её с нуля по вашей идее.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#F5F3F1">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&family=Golos+Text:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/styles.css">
+<script type="application/ld+json">
+[
+ {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Obsidium Lab",
+  "description": "3D-печать и 3D-моделирование на заказ в Астане",
+  "areaServed": "Астана",
+  "address": {
+   "@type": "PostalAddress",
+   "addressLocality": "Астана",
+   "addressCountry": "KZ"
+  },
+  "priceRange": "₸₸",
+  "paymentAccepted": "Kaspi"
+ },
+ {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "Сколько времени занимает печать?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Небольшие изделия готовы за 1–2 дня. Крупные или сложные модели могут занять до недели. Точный срок называем до начала работы."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Где найти модель, если у меня нет своей?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Готовые модели есть на сайтах вроде Thangs и Printables. Пришлите ссылку, и мы проверим, подходит ли модель для печати. Или выберите услугу «под ключ», и мы смоделируем всё сами."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Какие материалы и цвета доступны?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Сейчас печатаем из PLA. Это прочный и безопасный пластик для игрушек, декора и бытовых мелочей. Палитра цветов растёт, укажите нужный цвет в заявке."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Как оплатить?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Через Kaspi: перевод или QR. Для заказов под ключ берём предоплату 50% после согласования модели."
+    }
+   }
+  ]
+ }
+]
+</script>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top"><span class="logo-mark" aria-hidden="true"></span>Obsidium Lab</a>
+    <ul>
+      <li><a href="#services" data-i18n="nav1">Услуги</a></li>
+      <li><a href="#shop" data-i18n="nav2">Магазин</a></li>
+      <li><a href="#order" data-i18n="nav3">Заказать</a></li>
+      <li><a href="#faq" data-i18n="nav4">Вопросы</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="lang" role="group" aria-label="Язык / Тіл">
+        <button type="button" id="lang-ru" data-lang="ru" aria-pressed="true">РУС</button>
+        <button type="button" id="lang-kk" data-lang="kk" aria-pressed="false">ҚАЗ</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <span class="label" data-i18n="eyebrow">3D-печать в Астане</span>
+          <h1 data-i18n-html="h1">Напечатаем вашу модель или <em>создадим её с нуля</em></h1>
+          <p data-i18n="lead">Пришлите готовый файл, и мы аккуратно его напечатаем. Есть только идея? Мы смоделируем деталь, игрушку или подарок и доставим готовое изделие по Астане.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#order" data-i18n="cta1">Оставить заявку</a>
+            <a class="btn btn-line" href="#shop" data-i18n="cta2">Готовые изделия</a>
+          </div>
+          <div class="specs">
+            <span data-i18n="spec1">слой от 0,12 мм</span>
+            <span data-i18n="spec2">до 390 × 390 × 340 мм</span>
+            <span data-i18n="spec3">PLA, несколько цветов</span>
+          </div>
+        </div>
+        <div class="art" aria-hidden="true"><div class="stack" id="stack"></div></div>
+      </div>
+      <div class="facts">
+        <span><b data-i18n="f1b">Ответ за час</b><span data-i18n="f1">в рабочее время</span></span>
+        <span><b data-i18n="f2b">Kaspi</b><span data-i18n="f2">перевод или QR</span></span>
+        <span><b data-i18n="f3b">Доставка</b><span data-i18n="f3">по Астане или самовывоз</span></span>
+        <span><b data-i18n="f4b">Фото</b><span data-i18n="f4">до отправки заказа</span></span>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="label" data-i18n="s-eyebrow">Две услуги</span>
+        <h2 data-i18n="s-h2">Выберите, с чего начинаете</h2>
+        <p data-i18n="s-p">Если у вас есть файл модели, это обычная печать. Если есть только идея, эскиз или фото, это печать под ключ с моделированием.</p>
+      </div>
+      <div class="services">
+        <article class="svc">
+          <div class="svc-top"><h3 data-i18n="p-title">Печать вашей модели</h3><span class="pill" data-i18n="p-pill">есть файл</span></div>
+          <div class="price"><span data-i18n="p-price">от 150 ₸</span> <small data-i18n="p-unit">за грамм</small></div>
+          <p data-i18n="p-text">Вы присылаете STL, 3MF или OBJ. Мы проверяем модель, подбираем настройки и печатаем.</p>
+          <ol class="steps">
+            <li data-i18n="p-s1">Отправляете файл и пожелания по цвету</li>
+            <li data-i18n="p-s2">Называем точную цену и срок</li>
+            <li data-i18n="p-s3">Печатаем, присылаем фото, доставляем</li>
+          </ol>
+          <a class="btn btn-primary" href="#order" data-svc="print" data-i18n="p-btn">Заказать печать</a>
+        </article>
+        <article class="svc">
+          <div class="svc-top"><h3 data-i18n="d-title">Под ключ: от идеи до изделия</h3><span class="pill" data-i18n="d-pill">есть идея</span></div>
+          <div class="price"><span data-i18n="d-price">от 15 000 ₸</span> <small data-i18n="d-unit">моделирование и печать</small></div>
+          <p data-i18n="d-text">Опишите, что нужно: запчасть, органайзер, фигурку, подарок с именем. Мы создадим 3D-модель и напечатаем её.</p>
+          <ol class="steps">
+            <li data-i18n="d-s1">Рассказываете идею, присылаете фото или размеры</li>
+            <li data-i18n="d-s2">Показываем 3D-модель и согласовываем правки</li>
+            <li data-i18n="d-s3">Печатаем и передаём готовое изделие</li>
+          </ol>
+          <a class="btn btn-line" href="#order" data-svc="design" data-i18n="d-btn">Обсудить идею</a>
+        </article>
+      </div>
+
+      <div class="calc">
+        <h3 data-i18n="c-title">Примерная стоимость печати</h3>
+        <div class="field"><label for="c-grams" data-i18n="c-grams">Вес модели, г</label><input id="c-grams" type="number" min="1" value="60" inputmode="numeric"></div>
+        <div class="field"><label for="c-qty" data-i18n="c-qty">Количество, шт</label><input id="c-qty" type="number" min="1" value="2" inputmode="numeric"></div>
+        <div class="field"><label for="c-mat" data-i18n="c-mat">Материал</label>
+          <select id="c-mat">
+            <option value="150" data-i18n="c-o1">PLA, один цвет</option>
+            <option value="200" data-i18n="c-o2">PLA, несколько цветов</option>
+          </select>
+        </div>
+        <div class="calc-out"><label data-i18n="c-total">Итого примерно</label><div class="price" id="c-total">18 000 ₸</div></div>
+        <p class="calc-note" data-i18n="c-note">Вес модели показывает слайсер. Не знаете вес? Пришлите файл, мы посчитаем сами. Минимальный заказ 3 000 ₸.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="shop">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="label" data-i18n="sh-eyebrow">Магазин</span>
+        <h2 data-i18n="sh-h2">Готовые изделия</h2>
+        <p data-i18n="sh-p">Печатаем под заказ за 1–2 дня. Цвет выбираете при оформлении.</p>
+      </div>
+      <div class="shop">
+        <article class="prod">
+          <div class="ph"><small data-i18n="soon">фото скоро</small>
+            <svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="38" fill="none" stroke="var(--accent)" stroke-width="5"/><circle cx="50" cy="50" r="14" fill="var(--accent)"/><path d="M14 50h72" stroke="var(--accent)" stroke-width="3"/></svg>
+          </div>
+          <div class="prod-row"><strong data-i18n="pr1">Антистресс «Звезда смерти»</strong><span class="prod-price">2 500 ₸</span></div>
+          <p data-i18n="pr1d">Крутящийся шар-антистресс, печатается целиком.</p>
+        </article>
+        <article class="prod">
+          <div class="ph"><small data-i18n="soon">фото скоро</small>
+            <svg viewBox="0 0 100 100" aria-hidden="true"><ellipse cx="50" cy="58" rx="30" ry="24" fill="var(--accent)"/><circle cx="34" cy="32" r="10" fill="var(--accent)"/><circle cx="66" cy="32" r="10" fill="var(--accent)"/><circle cx="41" cy="55" r="3.5" fill="var(--soft)"/><circle cx="59" cy="55" r="3.5" fill="var(--soft)"/></svg>
+          </div>
+          <div class="prod-row"><strong data-i18n="pr2">Флекси красная панда</strong><span class="prod-price">3 500 ₸</span></div>
+          <p data-i18n="pr2d">Гибкая игрушка с подвижными суставами, 12 см.</p>
+        </article>
+        <article class="prod">
+          <div class="ph"><small data-i18n="soon">фото скоро</small>
+            <svg viewBox="0 0 100 100" aria-hidden="true"><path d="M20 70 Q50 12 80 70 Z" fill="var(--accent)"/><path d="M30 70h40v7H30z" fill="var(--accent)"/><circle cx="44" cy="52" r="3.5" fill="var(--soft)"/><circle cx="56" cy="52" r="3.5" fill="var(--soft)"/></svg>
+          </div>
+          <div class="prod-row"><strong data-i18n="pr3">Флекси дракончик</strong><span class="prod-price">3 500 ₸</span></div>
+          <p data-i18n="pr3d">Игрушка или брелок, без клея и сборки.</p>
+        </article>
+        <article class="prod">
+          <div class="ph"><small data-i18n="soon">фото скоро</small>
+            <svg viewBox="0 0 100 100" aria-hidden="true"><path d="M22 80h56v5H22z" fill="var(--accent)"/><path d="M36 80 L44 22 h9 L48 80z" fill="var(--accent)"/><rect x="50" y="18" width="22" height="40" rx="4" fill="none" stroke="var(--accent)" stroke-width="4"/></svg>
+          </div>
+          <div class="prod-row"><strong data-i18n="pr4">Подставка для телефона</strong><span class="prod-price">4 500 ₸</span></div>
+          <p data-i18n="pr4d">С прорезью для кабеля зарядки, фактура камня.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="order">
+    <div class="wrap order-grid">
+      <div>
+        <div class="sec-head" style="margin-bottom:0">
+          <span class="label" data-i18n="o-eyebrow">Заявка</span>
+          <h2 data-i18n="o-h2">Расскажите, что нужно напечатать</h2>
+          <p data-i18n="o-p">Ответим с ценой и сроком. Можно приложить файл модели или фото с размерами.</p>
+        </div>
+        <div class="contacts">
+          <div class="contact"><span>WhatsApp</span><span id="c-wa">+7 7XX XXX XX XX</span></div>
+          <div class="contact"><span>Telegram</span><span id="c-tg">@obsidiumlab</span></div>
+          <div class="contact"><span>Instagram</span><span id="c-ig">@obsidiumlab.kz</span></div>
+        </div>
+      </div>
+      <form id="order-form" novalidate>
+        <div class="seg" role="radiogroup" aria-label="Услуга">
+          <input type="radio" name="svc" id="svc-print" value="print" checked>
+          <label for="svc-print"><span style="color:inherit;font-size:inherit;font-weight:inherit" data-i18n="seg1">Печать модели</span><span data-i18n="seg1s">у меня есть файл</span></label>
+          <input type="radio" name="svc" id="svc-design" value="design">
+          <label for="svc-design"><span style="color:inherit;font-size:inherit;font-weight:inherit" data-i18n="seg2">Под ключ</span><span data-i18n="seg2s">у меня есть идея</span></label>
+        </div>
+        <div class="two">
+          <div class="field"><label for="f-name" data-i18n="f-name">Имя</label><input id="f-name" autocomplete="name"></div>
+          <div class="field"><label for="f-phone" data-i18n="f-phone">Телефон или WhatsApp</label><input id="f-phone" type="tel" autocomplete="tel" placeholder="+7 701 000 00 00"></div>
+        </div>
+        <div class="field"><label for="f-desc" id="f-desc-label">Что печатаем? Размер, цвет, количество</label><textarea id="f-desc" required aria-required="true" aria-describedby="f-done"></textarea></div>
+                <p class="form-hint" id="f-hint">Заявка откроется в WhatsApp. Файл модели (STL, 3MF, OBJ) или фото прикрепите прямо в чате.</p>
+        <button class="btn btn-primary" type="submit" data-i18n="submit">Отправить в WhatsApp</button>
+        <div class="done" id="f-done" role="status" aria-live="polite" hidden></div>
+      </form>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap faq">
+      <div class="sec-head"><span class="label" data-i18n="q-eyebrow">Вопросы</span><h2 data-i18n="q-h2">Частые вопросы</h2></div>
+      <details><summary data-i18n="q1">Сколько времени занимает печать?</summary><p data-i18n="a1">Небольшие изделия готовы за 1–2 дня. Крупные или сложные модели могут занять до недели. Точный срок называем до начала работы.</p></details>
+      <details><summary data-i18n="q2">Где найти модель, если у меня нет своей?</summary><p data-i18n="a2">Готовые модели есть на сайтах вроде Thangs и Printables. Пришлите ссылку, и мы проверим, подходит ли модель для печати. Или выберите услугу «под ключ», и мы смоделируем всё сами.</p></details>
+      <details><summary data-i18n="q3">Какие материалы и цвета доступны?</summary><p data-i18n="a3">Сейчас печатаем из PLA. Это прочный и безопасный пластик для игрушек, декора и бытовых мелочей. Палитра цветов растёт, укажите нужный цвет в заявке.</p></details>
+      <details><summary data-i18n="q4">Как оплатить?</summary><p data-i18n="a4">Через Kaspi: перевод или QR. Для заказов под ключ берём предоплату 50% после согласования модели.</p></details>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap"><span data-i18n="ft1">Obsidium Lab · Астана</span><span data-i18n="ft2">ИП · 3D-печать и моделирование</span></div>
+</footer>
+
+<script src="assets/main.js"></script>
+</body>
+</html>
