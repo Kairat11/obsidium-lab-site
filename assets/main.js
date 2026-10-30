@@ -1,7 +1,7 @@
 (function(){
   // Контакты бизнеса. Замените на настоящие перед запуском.
   // WHATSAPP: только цифры, с кодом страны, например 77011234567.
-  var CONTACTS={whatsapp:"77475891209",whatsappLabel:"+7 747 589 12 09",telegram:"",instagram:"obsidium_lab"};
+  var CONTACTS={whatsapp:"77475891209",whatsappLabel:"+7 747 589 12 09",telegram:"obsidium_lab",instagram:"obsidium_lab"};
   // Telegram и Instagram: имя без @. Пустое значение скрывает эту строку в контактах.
 
   var KK={
