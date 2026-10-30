@@ -1,8 +1,8 @@
 (function(){
   // Контакты бизнеса. Замените на настоящие перед запуском.
   // WHATSAPP: только цифры, с кодом страны, например 77011234567.
-  var CONTACTS={whatsapp:"77475891209",whatsappLabel:"+7 747 589 12 09",telegram:"",instagram:""};
-  // Пустой Telegram или Instagram скрывает эту строку в контактах.
+  var CONTACTS={whatsapp:"77475891209",whatsappLabel:"+7 747 589 12 09",telegram:"obsidium_lab",instagram:"obsidium_lab"};
+  // Telegram и Instagram: имя без @. Пустое значение скрывает эту строку в контактах.
 
   var KK={
     "draft":"Сайттың жобасы: бағалар, фотолар мен байланыстар әзірге шамамен.",
@@ -70,9 +70,9 @@
         need:"Тапсырысты сипаттаңыз.",nonum:"WhatsApp әлі қосылмаған. Бізге Telegram-да жазыңыз: ",opened:"WhatsApp ашылып жатыр. Терезе ашылмаса, бізге жазыңыз: "}
   };
   document.getElementById('c-wa').textContent=CONTACTS.whatsappLabel;
-  [['c-tg',CONTACTS.telegram],['c-ig',CONTACTS.instagram]].forEach(function(c){
+  [['c-tg',CONTACTS.telegram,'https://t.me/'],['c-ig',CONTACTS.instagram,'https://www.instagram.com/']].forEach(function(c){
     var el=document.getElementById(c[0]);
-    if(c[1])el.textContent=c[1];else el.parentNode.hidden=true;
+    if(c[1]){el.textContent='@'+c[1];el.href=c[2]+c[1]}else el.parentNode.hidden=true;
   });
   document.getElementById('order-form').addEventListener('submit',function(e){
     e.preventDefault();
@@ -80,7 +80,7 @@
     var name=document.getElementById('f-name').value.trim(),phone=document.getElementById('f-phone').value.trim(),desc=document.getElementById('f-desc').value.trim();
     done.hidden=false;
     if(!desc){done.textContent=t.need;document.getElementById('f-desc').focus();return}
-    if(!CONTACTS.whatsapp){done.textContent=t.nonum+(CONTACTS.telegram||CONTACTS.whatsappLabel);return}
+    if(!CONTACTS.whatsapp){done.textContent=t.nonum+(CONTACTS.telegram?'@'+CONTACTS.telegram:CONTACTS.whatsappLabel);return}
     var text=[t.head,t.svcL+": "+t.svc[svc],name&&(t.name+": "+name),phone&&(t.phone+": "+phone),"",desc].filter(function(x){return x!==""&&x!==false}).join("\n");
     window.open("https://wa.me/"+CONTACTS.whatsapp+"?text="+encodeURIComponent(text),"_blank","noopener");
     done.textContent=t.opened+CONTACTS.whatsappLabel;
