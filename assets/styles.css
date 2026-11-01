@@ -102,7 +102,8 @@ textarea{min-height:110px;resize:vertical}
 @media (max-width:460px){.calc{grid-template-columns:1fr;padding:22px}}
 
 /* shop */
-.shop{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.shop{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+@media (max-width:1100px){.shop{grid-template-columns:repeat(2,1fr)}}
 .prod{display:grid;gap:10px;align-content:start;min-width:0}
 .ph{aspect-ratio:1/1;max-width:100%;border-radius:18px;background:var(--soft);display:grid;place-items:center;position:relative}
 .ph svg{width:40%;height:auto}
